@@ -1,0 +1,39 @@
+// data/accounts.json
+[
+  {
+    "id": "FF123",
+    "rank": "Cao Thủ",
+    "image": "images/acc1.jpg",
+    "title": "Acc FF Rank Cao Thủ, Full Skin Súng",
+    "description": "Mô tả ngắn về acc: Nhiều skin hiếm, pet xịn, thông tin trắng...",
+    "price": 500000,
+    "old_price": 750000
+  },
+  {
+    "id": "FF456",
+    "rank": "Huyền Thoại",
+    "image": "images/acc2.jpg",
+    "title": "Acc Huyền Thoại Tâm Huyết",
+    "description": "Full nhân vật, full thẻ vô cực nhiều mùa, súng nâng cấp...",
+    "price": 1200000,
+    "old_price": null
+  },
+   {
+    "id": "FF789",
+    "rank": "Bạch Kim",
+    "image": "images/acc3.jpg",
+    "title": "Acc Giá Rẻ Cho Tân Thủ",
+    "description": "Có súng MP40 Mãng Xà, vài bộ đồ đẹp, chơi ngay...",
+    "price": 150000,
+    "old_price": null
+  },
+   {
+    "id": "FF101",
+    "rank": "Cao Thủ",
+    "image": "images/acc4.jpg",
+    "title": "Acc Cao Thủ Nữ Cực Chất",
+    "description": "Nhiều đồ nữ đẹp, súng ống ngon, sẵn sàng leo rank...",
+    "price": 450000,
+    "old_price": 600000
+  }
+]
