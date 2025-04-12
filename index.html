@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Acc Free Fire - Uy Tín, Giá Rẻ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-ff.png" alt="Shop Acc FF"> <!-- THAY LOGO CỦA BẠN -->
+                <span>FF Store</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Trang Chủ</a></li>
+                    <li><a href="#accounts">Danh Sách Acc</a></li>
+                    <li><a href="#about">Giới Thiệu</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+
+            <!-- User Actions: Managed by JS -->
+            <div class="user-actions">
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-secondary">Đăng Nhập</a>
+                    <a href="register.html" class="btn btn-primary">Đăng Ký</a>
+                </div>
+                <div class="user-info" style="display: none;"> <!-- Hidden initially -->
+                    <span id="welcome-message">Xin chào!</span>
+                    <button id="logout-button" class="btn btn-danger btn-sm">Đăng Xuất</button>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="menu-close" class="menu-close"><i class="fas fa-times"></i></button>
+        <div class="mobile-nav-logo">
+             <a href="index.html" class="logo">
+                <img src="images/logo-ff.png" alt="Shop Acc FF"> <!-- THAY LOGO CỦA BẠN -->
+                <span>FF Store</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                 <!-- Add event listeners later if needed -->
+                <li><a href="index.html#hero" class="mobile-nav-link">Trang Chủ</a></li>
+                <li><a href="index.html#accounts" class="mobile-nav-link">Danh Sách Acc</a></li>
+                <li><a href="index.html#about" class="mobile-nav-link">Giới Thiệu</a></li>
+                <li><a href="index.html#contact" class="mobile-nav-link">Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- User Actions Mobile: Managed by JS -->
+        <div class="user-actions-mobile">
+             <div class="auth-buttons-mobile">
+                <a href="login.html" class="btn btn-secondary">Đăng Nhập</a>
+                <a href="register.html" class="btn btn-primary">Đăng Ký</a>
+            </div>
+             <div class="user-info-mobile" style="display: none;"> <!-- Hidden initially -->
+                <span id="welcome-message-mobile">Xin chào!</span>
+                <button id="logout-button-mobile" class="btn btn-danger btn-sm">Đăng Xuất</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="videos/freefire-bg.mp4" type="video/mp4"> <!-- THAY VIDEO CỦA BẠN -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="animate-fade-in-up">Tìm Kiếm Tài Khoản Free Fire Ưng Ý</h1>
+            <p class="animate-fade-in-up delay-1">Uy tín - Bảo mật - Giá cả cạnh tranh - Giao dịch nhanh chóng</p>
+            <a href="#accounts" class="btn btn-primary btn-lg animate-fade-in-up delay-2">Xem Ngay!</a>
+        </div>
+    </section>
+
+    <!-- Account Listing Section -->
+    <section id="accounts" class="accounts-section section-padding">
+        <div class="container">
+            <h2 class="section-title"><span>Danh Sách Tài Khoản</span></h2>
+
+            <!-- Filter and Search Area -->
+            <div class="filter-search-area">
+                <input type="text" id="search-input" placeholder="Tìm theo tên, mô tả, mã số...">
+                <select id="rank-filter">
+                    <option value="">Tất cả Rank</option>
+                    <option value="Cao Thủ">Cao Thủ</option>
+                    <option value="Huyền Thoại">Huyền Thoại</option>
+                    <option value="Bạch Kim">Bạch Kim</option>
+                    <!-- Thêm các rank khác nếu cần -->
+                </select>
+            </div>
+
+            <!-- Grid for accounts, populated by JS -->
+            <div id="account-grid" class="account-grid">
+                 <p id="loading-message" class="info-message">Đang tải danh sách tài khoản...</p>
+                 <p id="no-results-message" class="info-message" style="display: none;">Không tìm thấy tài khoản nào phù hợp.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding bg-light">
+         <div class="container">
+            <h2 class="section-title"><span>Về Chúng Tôi</span></h2>
+            <div class="about-content">
+                <div class="about-image animate-slide-in-left">
+                    <img src="images/about-ff.png" alt="Về Shop Acc Free Fire"> <!-- THAY ẢNH GIỚI THIỆU -->
+                </div>
+                <div class="about-text animate-slide-in-right">
+                    <h3>FF Store - Shop Acc Free Fire Uy Tín Hàng Đầu</h3>
+                    <p>Chúng tôi tự hào là địa chỉ tin cậy cho các game thủ Free Fire muốn tìm kiếm tài khoản chất lượng với giá cả hợp lý. Với quy trình kiểm duyệt acc nghiêm ngặt, thông tin minh bạch và chính sách bảo hành rõ ràng, FF Store cam kết mang đến sự hài lòng và an tâm tuyệt đối cho khách hàng.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Tài khoản đa dạng, cập nhật liên tục.</li>
+                        <li><i class="fas fa-shield-alt"></i> Bảo mật thông tin (phía người bán).</li>
+                        <li><i class="fas fa-headset"></i> Hỗ trợ khách hàng nhanh chóng 24/7.</li>
+                        <li><i class="fas fa-dollar-sign"></i> Giá cả cạnh tranh nhất thị trường.</li>
+                    </ul>
+                     <p><em>Lưu ý: Các chức năng đăng nhập/đăng ký trên trang này chỉ mang tính chất mô phỏng giao diện.</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+         <div class="container">
+              <h2 class="section-title"><span>Liên Hệ</span></h2>
+              <p class="section-subtitle">
+                  Có bất kỳ câu hỏi nào hoặc cần hỗ trợ? Đừng ngần ngại liên hệ với chúng tôi qua các kênh dưới đây hoặc sử dụng nút "Liên Hệ Mua" trên mỗi tài khoản.
+              </p>
+              <div class="contact-methods">
+                  <!-- !!! THAY THẾ THÔNG TIN LIÊN HỆ CỦA BẠN !!! -->
+                  <a href="mailto:youremail@example.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Gửi Email</a>
+                  <a href="https://zalo.me/YOUR_ZALO_NUMBER" target="_blank" rel="noopener noreferrer" class="btn btn-info" style="background-color:#0068ff"><i class="fas fa-comment-dots"></i> Chat Zalo</a>
+                  <a href="https://m.me/YOUR_FACEBOOK_PAGE_USERNAME" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color:#0084ff"><i class="fab fa-facebook-messenger"></i> Chat Facebook</a>
+              </div>
+         </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer bg-dark">
+        <div class="container">
+            <p>© 2023 FF Store. Bảo lưu mọi quyền.</p>
+            <p>Thiết kế bởi [Tên của bạn hoặc Team]</p> <!-- THAY TÊN BẠN -->
+            <div class="social-links">
+                 <!-- THAY LINK MẠNG XÃ HỘI CỦA BẠN -->
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

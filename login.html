@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Shop Acc Free Fire</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+         <div class="auth-logo">
+             <a href="index.html">
+                <img src="images/logo-ff.png" alt="Shop Acc FF"> <!-- THAY LOGO -->
+                <span>FF Store</span>
+            </a>
+        </div>
+        <h2>Đăng Nhập Tài Khoản</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username"><i class="fas fa-user"></i> Tên đăng nhập (Demo)</label>
+                <input type="text" id="username" name="username" required placeholder="Nhập tên bất kỳ để demo">
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Mật khẩu (Demo)</label>
+                <input type="password" id="password" name="password" required placeholder="Mật khẩu không được kiểm tra">
+            </div>
+            <p id="login-error" class="error-message" style="display: none;">Vui lòng nhập Tên đăng nhập.</p>
+            <button type="submit" id="login-button" class="btn btn-primary btn-block">Đăng Nhập (Demo)</button>
+        </form>
+        <div class="auth-links">
+            <!-- <a href="#">Quên mật khẩu?</a> Tính năng này cần backend -->
+            <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+        </div>
+         <div class="back-to-home">
+             <a href="index.html"><i class="fas fa-arrow-left"></i> Quay lại Trang Chủ</a>
+         </div>
+    </div>
+     <script src="script.js"></script> <!-- Vẫn cần script.js -->
+</body>
+</html>

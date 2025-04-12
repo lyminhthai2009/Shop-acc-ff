@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Shop Acc Free Fire</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+         <div class="auth-logo">
+             <a href="index.html">
+                <img src="images/logo-ff.png" alt="Shop Acc FF"> <!-- THAY LOGO -->
+                <span>FF Store</span>
+            </a>
+        </div>
+        <h2>Tạo Tài Khoản Mới (Demo)</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="reg-username"><i class="fas fa-user"></i> Tên đăng nhập</label>
+                <input type="text" id="reg-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-email"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" id="reg-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-password"><i class="fas fa-lock"></i> Mật khẩu</label>
+                <input type="password" id="reg-password" name="password" required>
+            </div>
+             <div class="form-group">
+                <label for="reg-confirm-password"><i class="fas fa-lock"></i> Xác nhận mật khẩu</label>
+                <input type="password" id="reg-confirm-password" name="confirm_password" required>
+            </div>
+             <p id="register-message" class="message" style="display: none;"></p>
+            <button type="submit" class="btn btn-primary btn-block">Đăng Ký (Demo)</button>
+        </form>
+        <div class="auth-links">
+            <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+        </div>
+         <div class="back-to-home">
+             <a href="index.html"><i class="fas fa-arrow-left"></i> Quay lại Trang Chủ</a>
+         </div>
+    </div>
+     <script src="script.js"></script> <!-- Vẫn cần script.js -->
+</body>
+</html>
